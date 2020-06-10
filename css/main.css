@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Poppins Light";
+  src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+body {
+  background: #FF7A7A;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body .container {
+  width: 1440px;
+}
+body .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+body .intro h1 {
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 3rem;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+body .intro p {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+body .promotion {
+  background: #6055A5;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+}
+body .promotion p {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 0;
+}
+body .promotion p span {
+  font-family: "Poppins SemiBold", sans-serif;
+}
+body .sign-up {
+  background: #FFFFFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  text-align: center;
+}
+body .sign-up .form-group {
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+body .sign-up .form-group #inputfName-error,
+body .sign-up .form-group #inputlName-error,
+body .sign-up .form-group #inputEmail-error,
+body .sign-up .form-group #inputPassword-error {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  color: #FF7A7A;
+  margin-bottom: 0;
+}
+body .sign-up .form-group input {
+  font-family: "Poppins SemiBold";
+  font-size: 14px;
+  border-color: #B9B6D3;
+  padding: 1.75rem;
+  color: #3E3C49;
+}
+body .sign-up .form-group input:focus {
+  box-shadow: 0 0 0 0;
+  border-color: #3E3C49;
+}
+body .sign-up .form-group input.error {
+  background-image: url("../images/icon-error.svg") !important;
+  background-attachment: initial !important;
+  background-size: auto !important;
+  background-position: 98% 50% !important;
+  background-repeat: no-repeat !important;
+}
+body .sign-up .btn {
+  font-family: "Poppins SemiBold";
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #38CC8C;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  -webkit-box-shadow: 0px 7px 0px 0px #31B87D;
+  -moz-box-shadow: 0px 7px 0px 0px #31B87D;
+  box-shadow: 0px 7px 0px 0px #31B87D;
+}
+body .sign-up .btn:hover, body .sign-up .btn:focus {
+  background: #77E2B4;
+}
+body .sign-up small {
+  font-family: "Poppins SemiBold";
+  font-size: 70%;
+  color: #B9B6D3;
+}
+body .sign-up small a {
+  color: #FF7A7A;
+  transition: all ease-in-out 0.2s;
+}
+body .sign-up small a:hover, body .sign-up small a:focus {
+  color: #6055A5;
+  text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    height: auto;
+  }
+  body .intro {
+    padding: 2rem 0;
+  }
+  body .intro h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body .intro p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  body .promotion p {
+    font-size: 0.75rem;
+    width: 150px;
+    margin: 0 auto;
+  }
+  body .sign-up {
+    margin-bottom: 2rem;
+  }
+  body .sign-up .form-group {
+    margin-bottom: 1rem;
+  }
+  body .sign-up .form-group input {
+    font-size: 0.75rem;
+    padding: 1.5rem 1rem;
+  }
+  body .sign-up .form-group #inputfName-error,
+body .sign-up .form-group #inputlName-error,
+body .sign-up .form-group #inputEmail-error,
+body .sign-up .form-group #inputPassword-error {
+    font-size: 0.65rem;
+  }
+  body .sign-up .btn {
+    font-size: 0.75rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
