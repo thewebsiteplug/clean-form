@@ -25,24 +25,26 @@
                 <div class="promotion">
                     <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
                 </div>
-                <form class="sign-up" id="form" method="POST" action="">
+                <form class="sign-up" id="form" method="POST">
                     <div class="form-group">
-                        <input type="text" min-length="3" name="fName" class="form-control js-input"
-                            id="inputfName" aria-describedby="fNameHelp" placeholder="First Name"
-                            aria-placeholder="First Name" onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+                        <label for="fname" style="display: none">First Name</label>
+                        <input type="text" role="text" form-control js-input" name="fname" id="fname" placeholder="First Name"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
                     </div>
                     <div class="form-group">
-                        <input type="text" min-length="3" name="lName" class="form-control js-input"
-                            id="inputlName" aria-describedby="lNameHelp" placeholder="Last Name"
-                            aria-placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
+                        <label for="lname" style="display: none">Last Name</label>
+                        <input type="text" role="text" class="form-control js-input" name="lname" id="lname" placeholder="Last Name"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" class="form-control js-input" id="inputEmail"
-                            aria-describedby="emailHelp" placeholder="Email Address" aria-placeholder="Email Address" onfocus="this.placeholder=''" onblur="this.placeholder='Email Address'">
+                        <label for="email" style="display: none">Email</label>
+                        <input type="email" role="email" class="form-control js-input" name="email" id="email" placeholder="Email Address"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='Email Address'">
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" class="form-control js-input" id="inputPassword"
-                            placeholder="Password" aria-placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'">
+                        <label for="password" style="display: none">Password</label>
+                        <input type="password" class="form-control js-input" name="password" id="password" placeholder="Password"
+                            onfocus="this.placeholder=''" onblur="this.placeholder='Password'">
                     </div>
                     <button type="submit" class="btn">Claim your free trial</button>
                     <small>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></small>

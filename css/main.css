@@ -78,10 +78,10 @@ body .sign-up .form-group {
   margin-bottom: 1.5rem;
   text-align: right;
 }
-body .sign-up .form-group #inputfName-error,
-body .sign-up .form-group #inputlName-error,
-body .sign-up .form-group #inputEmail-error,
-body .sign-up .form-group #inputPassword-error {
+body .sign-up .form-group #fname-error,
+body .sign-up .form-group #lname-error,
+body .sign-up .form-group #email-error,
+body .sign-up .form-group #password-error {
   font-family: "Poppins SemiBold", sans-serif;
   font-style: italic;
   font-size: 12px;
@@ -169,10 +169,10 @@ body .sign-up small a:hover, body .sign-up small a:focus {
     font-size: 0.75rem;
     padding: 1.5rem 1rem;
   }
-  body .sign-up .form-group #inputfName-error,
-body .sign-up .form-group #inputlName-error,
-body .sign-up .form-group #inputEmail-error,
-body .sign-up .form-group #inputPassword-error {
+  body .sign-up .form-group #fname-error,
+body .sign-up .form-group #lname-error,
+body .sign-up .form-group #email-error,
+body .sign-up .form-group #password-error {
     font-size: 0.65rem;
   }
   body .sign-up .btn {
