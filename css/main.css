@@ -144,7 +144,8 @@ body .sign-up small a:hover, body .sign-up small a:focus {
   }
   body .intro {
     padding: 2rem 0;
-    width: 100%;
+    width: 300px;
+    margin: 0 auto;
   }
   body .intro h1 {
     font-size: 1.5rem;
